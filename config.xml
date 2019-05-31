@@ -31,7 +31,7 @@
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
     -->
-    <preference name="permissions"                value="true"/>
+    <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
@@ -57,7 +57,8 @@
     <!-- <plugin name="cordova-plugin-battery-status" spec="2.0.2" /> -->
 <!-- <plugin name="cordova-plugin-camera" spec="4.0.3" /> -->
 <!-- <plugin name="cordova-plugin-console" spec="1.1.0" /> -->
-<plugin name="cordova-plugin-contacts" spec="3.0.1" />
+<plugin name="cordova-plugin-contacts"/>
+<plugin name="cordova-plugin-globalization" />
 <!-- <plugin name="cordova-plugin-device" spec="2.0.2" /> -->
 <!-- <plugin name="cordova-plugin-device-motion" spec="2.0.1" /> 
 <plugin name="cordova-plugin-device-orientation" spec="2.0.1" />
@@ -83,7 +84,7 @@
     <plugin name="cordova-plugin-device-orientation" />
     <plugin name="cordova-plugin-dialogs" />
     <plugin name="cordova-plugin-geolocation" />
-    <plugin name="cordova-plugin-globalization" />
+    
     <plugin name="cordova-plugin-inappbrowser" />
     <plugin name="cordova-plugin-media" />
     <plugin name="cordova-plugin-network-information" />
