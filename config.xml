@@ -28,7 +28,7 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    <plugin name="cordova-plugin-contacts" spec="~1.0.1" />
+    
 
 
 
@@ -70,7 +70,7 @@
 
 
     <!-- Plugins -->
-    <plugin name="cordova-plugin-contacts" spec="~3.0.1" />
+    <!-- <plugin name="cordova-plugin-contacts" spec="~3.0.1" /> -->
     <!-- Core plugins -->
     <plugin name="cordova-plugin-battery-status" />
     <plugin name="cordova-plugin-camera" />
