@@ -25,20 +25,12 @@
         <preference name="BackupWebStorage" value="none" />
     </platform>
     <preference name="DisallowOverscroll" value="true" />
-    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
-    <plugin name="cordova-plugin-console" spec="~1.0.1" />
-    <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    
-
-
-
-
-        <!--
+            <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
     -->
-    <preference name="permissions"                value="none"/>
+    <preference name="permissions"                value="true"/>
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
