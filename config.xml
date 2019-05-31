@@ -59,15 +59,6 @@
         <preference name="phonegap-version"       value="3.5.0" />
     -->
 
-    <platform name="android">
-    <custom-config-file target="AndroidManifest.xml" parent="/*">
-         <uses-permission android:name="android.permission.INTERNET" />
-         <uses-permission android:name="android.permission.READ_CONTECTS" />
-         <uses-permission android:name="android.permission.WRITE_CONTECTS" />
-             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    </custom-config-file>
-</platform>
-
 
     <!-- Plugins -->
     <!-- <plugin name="cordova-plugin-contacts" spec="~3.0.1" /> -->
@@ -115,6 +106,12 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+         <custom-config-file target="AndroidManifest.xml" parent="/*">
+         <uses-permission android:name="android.permission.INTERNET" />
+         <uses-permission android:name="android.permission.READ_CONTECTS" />
+         <uses-permission android:name="android.permission.WRITE_CONTECTS" />
+             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    </custom-config-file>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
