@@ -33,7 +33,7 @@
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
-    <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+    <preference name="show-splash-screen-spinner" value="false" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <!-- <preference name="android-installLocation"    value="auto" />     -->
@@ -54,7 +54,7 @@
         <plugin name="cordova-plugin-device-motion" spec="2.0.1" />
         <plugin name="cordova-plugin-device-orientation" spec="2.0.1" />
         <plugin name="cordova-plugin-dialogs" spec="2.0.1" />
-        <plugin name="cordova-plugin-geolocation" spec="4.0.1" />
+        <!-- <plugin name="cordova-plugin-geolocation" spec="4.0.1" /> -->
         <plugin name="cordova-plugin-globalization" spec="1.11.0" />
         <plugin name="cordova-plugin-inappbrowser" spec="3.0.0" />
         <plugin name="cordova-plugin-media" spec="5.0.2" />
