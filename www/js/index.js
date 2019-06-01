@@ -34,7 +34,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -46,9 +45,24 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+       // String [] permissions = { Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_CONTACTS };
+       //  // alert(permissions.READ_CONTACTS);
+       //  // permissions.checkPermission(permission.READ_CONTACTS, successCallback, errorCallback);
+       //  // permissions.requestPermission(permission.READ_CONTACTS, successCallback, errorCallback);
+       //  cordova.requestPermissions(this, 0, permissions);
         listContacts();
+        pickercon();
     }
 };
+
+function pickercon(){
+ navigator.contacts.pickContact(function (contact) {
+        alert(JSON.stringify(contact))
+    }, function (err) {
+        console.log('Error: ' + err);
+    });
+}
+
 function listContacts(){
 
     var options = new ContactFindOptions();
